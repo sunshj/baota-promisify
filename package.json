@@ -1,14 +1,36 @@
 {
   "name": "baota-promisify",
   "version": "1.0.1",
-  "author": {
-    "name": "sunshj"
-  },
+  "description": "宝塔面板API Promise版，基于baota修改",
+  "keywords": [
+    "宝塔面板",
+    "宝塔",
+    "bt.cn",
+    "baota",
+    "baota-promisify",
+    "baota promise"
+  ],
+  "contributors": [
+    {
+      "name": "sunshj",
+      "url": "https://github.com/sunshj"
+    },
+    {
+      "name": "Wuqizhao",
+      "url": "https://github.com/wuqizhao"
+    }
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "ts-node test/app.ts",
     "build": "tsc"
   },
   "dependencies": {
     "baota": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0"
   }
 }

@@ -1,7 +1,6 @@
-// @ts-ignore
-import * as BaoTa from 'baota'
+const BaoTa = require("baota")
 
-type Config = { host: String, key: String, proxy?: String }
+type Config = { host: string, key: string, proxy?: string }
 
 /**
  * Baota Promise API
@@ -30,7 +29,7 @@ class Baota {
      * })
      * ```
      */
-    public static getSystemTotal: String = "getSystemTotal"
+    public static getSystemTotal: string = "getSystemTotal"
     /**
      * 获取磁盘分区信息
      * ```
@@ -39,7 +38,7 @@ class Baota {
      * })
      * ```
      */
-    public static getDiskInfo: String = "getDiskInfo"
+    public static getDiskInfo: string = "getDiskInfo"
     /**
      * 获取实时状态信息(CPU、内存、网络、负载)
      * ```js
@@ -48,7 +47,7 @@ class Baota {
      * })
      * ```
      */
-    public static getNetWork: String = "getNetWork"
+    public static getNetWork: string = "getNetWork"
     /**
      * 检查是否有安装任务
      * ```js
@@ -57,7 +56,7 @@ class Baota {
      * })
      * ```
      */
-    public static getTaskCount: String = "getTaskCount"
+    public static getTaskCount: string = "getTaskCount"
     /**
      * 检查面板更新
      *
@@ -67,7 +66,7 @@ class Baota {
      * })
      * ```
      */
-    public static updatePanel: String = "updatePanel"
+    public static updatePanel: string = "updatePanel"
     /**
      * 安全风险扫描
      *
@@ -77,7 +76,7 @@ class Baota {
      * })
      * ```
      */
-    public static getRiskList: String = "getRiskList"
+    public static getRiskList: string = "getRiskList"
     /**
      * 获取网站分类列表
      *
@@ -87,7 +86,7 @@ class Baota {
      * })
      * ```
      */
-    public static getSiteTypes: String = "getSiteTypes"
+    public static getSiteTypes: string = "getSiteTypes"
     /**
      * 新建网站分类
      *
@@ -98,7 +97,7 @@ class Baota {
      * })
      * ```
      */
-    public static addSiteTypes: String = "addSiteTypes"
+    public static addSiteTypes: string = "addSiteTypes"
     /**
      * 删除网站分类
      *
@@ -109,7 +108,7 @@ class Baota {
      * })
      * ```
      */
-    public static delSiteTypes: String = "delSiteTypes"
+    public static delSiteTypes: string = "delSiteTypes"
     /**
      * 获取已安装的 PHP 版本列表
      *
@@ -119,7 +118,7 @@ class Baota {
      * })
      * ```
      */
-    public static getPHPVersion: String = "getPHPVersion"
+    public static getPHPVersion: string = "getPHPVersion"
     /**
      * 获取网站列表
      *
@@ -139,7 +138,7 @@ class Baota {
      * })
      * ```
      */
-    public static getSitesList: String = "getSitesList"
+    public static getSitesList: string = "getSitesList"
     /**
      * 创建网站
      *
@@ -170,7 +169,7 @@ class Baota {
      * })
      * ```
      */
-    public static addSite: String = "addSite"
+    public static addSite: string = "addSite"
     /**
      * 删除网站
      *
@@ -188,7 +187,7 @@ class Baota {
      * })
      * ```
      */
-    public static delSite: String = "delSite"
+    public static delSite: string = "delSite"
     /**
      * 停用网站
      *
@@ -203,7 +202,7 @@ class Baota {
      * })
      * ```
      */
-    public static siteStop: String = "siteStop"
+    public static siteStop: string = "siteStop"
     /**
      * 启用网站
      *
@@ -218,7 +217,7 @@ class Baota {
      * })
      * ```
      */
-    public static siteStart: String = "siteStart"
+    public static siteStart: string = "siteStart"
     /**
      * 设置网站到期时间
      *
@@ -233,7 +232,7 @@ class Baota {
      * })
      * ```
      */
-    public static setSiteEndDate: String = "setSiteEndDate"
+    public static setSiteEndDate: string = "setSiteEndDate"
     /**
      * 修改网站备注<
      *
@@ -248,7 +247,7 @@ class Baota {
      * })
      * ```
      */
-    public static setSitePs: String = "setSitePs"
+    public static setSitePs: string = "setSitePs"
     /**
      * 获取FTP列表（可搜索）
      *
@@ -264,7 +263,7 @@ class Baota {
      * })
      * ```
      */
-    public static getFtpList: String = "getFtpList"
+    public static getFtpList: string = "getFtpList"
     /**
      * 添加FTP
      *
@@ -281,7 +280,7 @@ class Baota {
      * })
      * ```
      */
-    public static addFtp: String = "addFtp"
+    public static addFtp: string = "addFtp"
     /**
      * 设置FTP状态，停用/启用
      *
@@ -297,7 +296,7 @@ class Baota {
      * })
      * ```
      */
-    public static setFtpStatus: String = "setFtpStatus"
+    public static setFtpStatus: string = "setFtpStatus"
     /**
      * 删除FTP
      *
@@ -312,7 +311,7 @@ class Baota {
      * })
      * ```
      */
-    public static delFtp: String = "delFtp"
+    public static delFtp: string = "delFtp"
     /**
      * 修改FTP密码
      *
@@ -328,7 +327,7 @@ class Baota {
      * })
      * ```
      */
-    public static setFtpPassword: String = "setFtpPassword"
+    public static setFtpPassword: string = "setFtpPassword"
     /**
      * 修改FTP端口
      * 注意：该操作会影响所有FTP
@@ -340,7 +339,7 @@ class Baota {
      * })
      * ```
      */
-    public static setFtpPort: String = "setFtpPort"
+    public static setFtpPort: string = "setFtpPort"
     /**
      * 修改FTP备注<
      *
@@ -355,7 +354,7 @@ class Baota {
      * })
      * ```
      */
-    public static setFtpPs: String = "setFtpPs"
+    public static setFtpPs: string = "setFtpPs"
     /**
      * FTP容量</h4>
      * 注：此功能为企业版专享功能； 如需取消容量配额，请设为“0”。
@@ -371,7 +370,7 @@ class Baota {
      * })
      * ```
      */
-    public static setFtpQuota: String = "setFtpQuota"
+    public static setFtpQuota: string = "setFtpQuota"
     /**
      * 获取监控状态
      *
@@ -381,7 +380,7 @@ class Baota {
      * })
      * ```
      */
-    public static getMonitorStatus: String = "getMonitorStatus"
+    public static getMonitorStatus: string = "getMonitorStatus"
     /**
      * 设置监控状态、保存时间
      *
@@ -396,7 +395,7 @@ class Baota {
      * })
      * ```
      */
-    public static setMonitorStatus: String = "setMonitorStatus"
+    public static setMonitorStatus: string = "setMonitorStatus"
     /**
      * 平均负载
      *
@@ -411,7 +410,7 @@ class Baota {
      * })
      * ```
      */
-    public static getLoadAvg: String = "getLoadAvg"
+    public static getLoadAvg: string = "getLoadAvg"
     /**
      * CPU及内存使用率
      *
@@ -421,7 +420,7 @@ class Baota {
      * })
      * ```
      */
-    public static getCPUIO: String = "getCPUIO"
+    public static getCPUIO: string = "getCPUIO"
     /**
      * 磁盘IO
      *
@@ -436,7 +435,7 @@ class Baota {
      * })
      * ```
      */
-    public static getDiskIO: String = "getDiskIO"
+    public static getDiskIO: string = "getDiskIO"
     /**
      * 网络IO
      *
@@ -451,7 +450,7 @@ class Baota {
      * })
      * ```
      */
-    public static getNetIO: String = "getNetIO"
+    public static getNetIO: string = "getNetIO"
     /**
      * 获取SSH终端列表
      *
@@ -461,7 +460,7 @@ class Baota {
      * })
      * ```
      */
-    public static getSSHList: String = "getSSHList"
+    public static getSSHList: string = "getSSHList"
     /**
      * 添加/修改SSH
      *
@@ -480,7 +479,7 @@ class Baota {
      * })
      * ```
      */
-    public static addSSH: String = "addSSH"
+    public static addSSH: string = "addSSH"
     /**
      * 删除SSH
      *
@@ -494,7 +493,7 @@ class Baota {
      * })
      * ```
      */
-    public static delSSH: String = "delSSH"
+    public static delSSH: string = "delSSH"
     /**
      * 获取常用命令
      *
@@ -504,7 +503,7 @@ class Baota {
      * })
      * ```
      */
-    public static getCommandList: String = "getCommandList"
+    public static getCommandList: string = "getCommandList"
     /**
      * 添加常用命令
      *
@@ -519,7 +518,7 @@ class Baota {
      * })
      * ```
      */
-    public static createCommand: String = "createCommand"
+    public static createCommand: string = "createCommand"
     /**
      * 修改常用命令
      *
@@ -535,7 +534,7 @@ class Baota {
      * })
      * ```
      */
-    public static modifyCommand: String = "modifyCommand"
+    public static modifyCommand: string = "modifyCommand"
     /**
      * 删除常用命令
      *
@@ -549,7 +548,7 @@ class Baota {
      * })
      * ```
      */
-    public static delCommand: String = "delCommand"
+    public static delCommand: string = "delCommand"
     /**
      * 获取软件列表 (可搜索)
      *
@@ -565,13 +564,13 @@ class Baota {
      * })
      * ```
      */
-    public static getSoftList: String = "getSoftList"
+    public static getSoftList: string = "getSoftList"
 
     constructor(config: Config) {
         this.baotaInstance = new BaoTa(config)
     }
 
-    create(funcName, params?: any) {
+    create(funcName: string, params?: any) {
         return new Promise((resolve, reject) => {
             if (params) {
                 this.baotaInstance[funcName](params, (err, data) => {
@@ -595,4 +594,4 @@ class Baota {
 
 }
 
-export default Baota
+module.exports = Baota
