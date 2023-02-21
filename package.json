@@ -1,0 +1,14 @@
+{
+  "name": "baota-promisify",
+  "version": "1.0.1",
+  "author": {
+    "name": "sunshj"
+  },
+  "scripts": {
+    "test": "ts-node test/app.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "baota": "^0.2.1"
+  }
+}
