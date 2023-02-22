@@ -234,7 +234,7 @@ class Baota {
      */
     public static setSiteEndDate: string = "setSiteEndDate"
     /**
-     * 修改网站备注<
+     * 修改网站备注
      *
      * ```typescript
      * const formData = {
@@ -341,7 +341,7 @@ class Baota {
      */
     public static setFtpPort: string = "setFtpPort"
     /**
-     * 修改FTP备注<
+     * 修改FTP备注
      *
      * ```js
      * let formData = {
@@ -356,7 +356,7 @@ class Baota {
      */
     public static setFtpPs: string = "setFtpPs"
     /**
-     * FTP容量</h4>
+     * FTP容量
      * 注：此功能为企业版专享功能； 如需取消容量配额，请设为“0”。
      *
      * ```js

@@ -20,6 +20,10 @@
       "url": "https://github.com/wuqizhao"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunshj/baota-promisify.git"
+  },
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
